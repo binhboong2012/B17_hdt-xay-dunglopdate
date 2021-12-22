@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop date</title>
+</head>
+<body>
+<script>
+    class Date {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        get day() {
+            return this.day;
+        }
+
+        set day(day) {
+            this.day = day;
+        }
+
+        get month() {
+            return this.month;
+        }
+
+        set month(month) {
+            this.month = month;
+        }
+
+        get year() {
+            return this.year;
+        }
+
+        set year(year) {
+            this.year = year;
+        }
+
+    }
+
+    let date = new Date(2, 2, 2007);
+    date.day = 4
+    date.month = 12
+    date.year = 2021
+    alert(date.day + '/' + date.month + '/' + date.year);
+
+</script>
+</body>
+</html>
